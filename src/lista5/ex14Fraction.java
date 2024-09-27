@@ -10,7 +10,7 @@ public class ex14Fraction {
 		this.b = b;
 	}
 	
-	public void sum(ex14Fraction fraction) {
+	public void add(ex14Fraction fraction) {
 		long newDenominator = lcm(this.b, fraction.b);
 		
 		this.a = this.a * (newDenominator / this.b) + fraction.a * (newDenominator / fraction.b);
